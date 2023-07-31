@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
 app.use('/',Router);
-const PORT=8000;
+const PORT=process.env.PORT;
 
 
 Database();
