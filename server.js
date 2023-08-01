@@ -7,7 +7,7 @@ const app=express();
 app.use(cors(
   {
     origin: ["https://blog-kabootar.vercel.app"],
-    methods: ["POST","GET"],
+    methods: ["POST","GET","PUT","DELETE"],
     credentials: true
   }
 ));
