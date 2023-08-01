@@ -1,7 +1,7 @@
 import grid from 'gridfs-stream'
 import mongoose from 'mongoose';
 
-const url=process.env.PORT;
+const url="https://blogs-backend-singhal97dhruv.vercel.app/";
 
 const conn=mongoose.connection;
 
