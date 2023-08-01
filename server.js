@@ -4,7 +4,13 @@ import bodyParser from "body-parser";
 import Router from "./routes/route.js"
 import cors from "cors"
 const app=express();
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://blog-kabootar.vercel.app"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
+));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
 app.use('/',Router);
